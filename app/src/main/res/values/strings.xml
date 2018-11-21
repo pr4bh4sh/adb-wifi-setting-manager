@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WifiSettingsManager</string>
+    <string name="device_admin">ADBJoinWifi Device Admin</string>
+</resources>
