@@ -1,9 +1,24 @@
 # adb-wifi-setting-manager
 Control wifi connection with adb
 
+To enable wifi:
+`adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn enableWifi`
+
+To disable wifi:
+`adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn disableWifi`
+
+To connect to saved wifi network:
+`adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn connect -e ssid $ssid_name`
+
+To connect to new wifi network:
+`adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn newConnection -e ssid $ssid_name -e password $password`
+
+Connect to Wifi with user name and Password
+`adb shell am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn connect -e ssid $ssid_name -e userName $user_name -e password $password`
+  
 
 # TODO
-* [ ] Add all adb commands in readme
+* [x] Add all adb commands in readme
 * [ ] Add support for more encryption types
 
 Reference:
