@@ -24,6 +24,7 @@ Forget a saved Wifi SSID
 
 # TODO
 * [x] Add all adb commands in readme
+* [ ] Add proxy server support
 * [ ] Add support for more encryption types
 
 
