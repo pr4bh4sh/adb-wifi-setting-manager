@@ -18,6 +18,7 @@ To disable wifi:
   `adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn disableWifi`
 
 To connect to saved wifi network:
+
   `adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn connect -e ssid <ssid_name>`
 
 To connect to new wifi network:
