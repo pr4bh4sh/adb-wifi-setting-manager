@@ -46,7 +46,14 @@ Forget a saved Wifi SSID
 
 
 ## Note 
-This app is created for interacting with wifi networks while running automated tests. Due to the security messures in Android OS no one is allowed to manupulating the saved wifi networks if it wasn't added by 'adb-wifi-setting-manager' app. So if you wish to use this app please remove all the saved network connections from your device and use this app for all action like adding, removing new wifi networks.
+```diff
+- This app is created for interacting with wifi networks while running automated tests.
+- Due to the security messures in Android OS the app does not has permission for manupulating
+- the saved wifi networks if it wasn't added by 'adb-wifi-setting-manager' app. So if you 
+- wish to use this app please remove all the saved network connections from your device and use 
+- this app for all action like adding, removing new wifi networks.
+```
+
 
 
 Reference:
