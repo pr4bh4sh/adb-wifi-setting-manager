@@ -1,10 +1,21 @@
 # adb-wifi-setting-manager
 Control wifi connection with adb
 
-1. Switch between wifi network when running automation tests without manual intervention
-2. You have 2 wifi network one fast one slow and you are testing low bandwidth related scenario
-3. You have two wifi network, one is in internal network and other outside of internal network.
-3. You have several wifi networks, and you are too lazy to type it. Just save the command and copy paste it everytime time.
+Here's some usecases
+1. Switch between wifi network when running automation tests without manual intervention.
+2. You have 2 wifi network, one fast one slow and you want to create automated tests for the app's behaviour on low bandwidth.
+3. You have two wifi network, one is in internal network and other outside of internal network and you want to test the app behaviour on both network.
+4. You have several wifi networks, and you are too lazy to type it the wifi passwords everytime you setup a new Android phone. Just create a shell script or copy paste the command to setup the new device.
+
+## Note 
+```diff
+- This app is created for interacting with wifi networks while running automated tests.
+- Due to the security messures of Android OS, this app can't manupulate(delete, update) existing
+- wifi networks unless it was added by 'adb-wifi-setting-manager' app.
+- So if you wish to have full controll of the SSID saved on the device with this app,
+- please remove all saved wifi networks on your device manually and use this app for all action 
+- e.g. adding, removing new wifi networks.
+```
 
 ## Commands:
 ---
@@ -43,17 +54,6 @@ Forget a saved Wifi SSID
 * [x] Add all adb commands in readme
 * [ ] Add proxy server support
 * [ ] Add support for more encryption types
-
-
-## Note 
-```diff
-- This app is created for interacting with wifi networks while running automated tests.
-- Due to the security messures in Android OS the app does not has permission for manupulating
-- the saved wifi networks if it wasn't added by 'adb-wifi-setting-manager' app. So if you 
-- wish to use this app please remove all the saved network connections from your device and use 
-- this app for all action like adding, removing new wifi networks.
-```
-
 
 
 Reference:
