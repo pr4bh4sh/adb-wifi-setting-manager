@@ -9,4 +9,5 @@ public class IntentExtras {
     public static final String SSID = "ssid";
     public static final String USER_NAME = "userName";
     public static final String PASSWORD = "password";
+    public static final String HIDDEN_SSID = "hidden";
 }

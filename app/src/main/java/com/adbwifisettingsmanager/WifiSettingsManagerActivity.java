@@ -64,10 +64,12 @@ public class WifiSettingsManagerActivity extends AppCompatActivity {
     private void connectToNewNetwork() {
         String networkSSID = extras.getString(IntentExtras.SSID);
         String networkPassword = extras.getString(IntentExtras.PASSWORD);
+        String networkHidden = extras.getString(IntentExtras.HIDDEN_SSID);
 
         WifiConfiguration wifiConfiguration = new WifiConfiguration();
         wifiConfiguration.SSID = String.format("\"%s\"", networkSSID);
         wifiConfiguration.preSharedKey = String.format("\"%s\"", networkPassword);
+        wifiConfiguration.hiddenSSID = Boolean.parseBoolean(networkHidden);
 
         WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         wifiManager.addNetwork(wifiConfiguration);

@@ -42,7 +42,7 @@ To connect to saved wifi network:
 
 To connect to new wifi network:
 
-  `adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn newConnection -e ssid <ssid_name> -e password <password>'`
+  `adb shell 'am start -n 'com.adbwifisettingsmanager/.WifiSettingsManagerActivity' --esn newConnection -e ssid <ssid_name> -e password <password> -e hidden true/false'`
 
 Connect to Wifi with user name and Password:
 
