@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/adb-wifi-setting-manager.iml" filepath="$PROJECT_DIR$/adb-wifi-setting-manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adb-wifi-setting-manager.iml" filepath="$PROJECT_DIR$/.idea/modules/adb-wifi-setting-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adb-wifi-setting-manager.app.unitTest.iml" />
     </modules>
   </component>
 </project>
